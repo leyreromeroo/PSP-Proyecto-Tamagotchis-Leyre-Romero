@@ -109,3 +109,4 @@
 2025-11-02 19:36:43,248 [Worker-44: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.junit.jupiter:junit-jupiter-params:5.11.0
 2025-11-02 19:36:43,814 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\PSP-Proyecto-Tamagotchis\src\main\resources
 2025-11-02 19:36:43,827 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\PSP-Proyecto-Tamagotchis\src\test\resources
+2025-11-02 19:58:55,390 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

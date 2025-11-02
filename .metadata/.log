@@ -1,0 +1,1359 @@
+!SESSION 2025-11-02 19:26:19.179 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=23.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-11-02 19:26:24.210
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-11-02 19:28:33.886
+!MESSAGE Logback config file: C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-11-02 19:28:46.389
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\leyre'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 4 0 2025-11-02 19:29:03.150
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.io.File.getParentFile()" because the return value of "org.apache.maven.model.Model.getPomFile()" is null
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.getProjectName(ProjectConfigurationManager.java:1003)
+	at org.eclipse.m2e.core.ui.internal.wizards.MavenProjectWizardLocationPage.validate(MavenProjectWizardLocationPage.java:298)
+	at org.eclipse.m2e.core.ui.internal.wizards.MavenProjectWizardLocationPage.lambda$2(MavenProjectWizardLocationPage.java:145)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:265)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4285)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4083)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3673)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.navigator.wizards.WizardShortcutAction.run(WizardShortcutAction.java:101)
+	at org.eclipse.ui.internal.views.helpers.EmptyWorkspaceHelper$1.linkActivated(EmptyWorkspaceHelper.java:283)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.handleActivate(AbstractHyperlink.java:215)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.handleMouseUp(AbstractHyperlink.java:309)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.lambda$3(AbstractHyperlink.java:117)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4285)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4083)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2025-11-02 19:49:18.256
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2025-11-02 19:49:18.256
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "Apache Commons Codec" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "Core :: Utilities" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "Core :: IO" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "Core :: Server" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2025-11-02 19:49:18.256
+!MESSAGE "Apache Commons Logging" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "Apache Mina SSHD :: OSGi" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "bcprov" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "Apache Ant" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "Git integration for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "Core :: Security" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2025-11-02 19:49:18.256
+!MESSAGE "slf4j-api" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "OSGi System Bundle" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "bcpg" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "Java implementation of Git" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "Java implementation of Git - optional Http support using Apache httpclient" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "jna" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2025-11-02 19:49:18.256
+!MESSAGE "Apache Apache HttpCore OSGi bundle" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "Apache Mina SSHD :: SFTP" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "bcpkix" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "Apache Commons Compress" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "bcutil" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "Java implementation of Git - ssh support using Apache MINA sshd" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "Gson" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "XZ data compression" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "jna-platform" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "Core :: HTTP" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.256
+!MESSAGE "Java implementation of Git - GPG support using BouncyCastle" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2025-11-02 19:49:18.256
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.256
+!MESSAGE Software being installed: OSGi System Bundle 3.23.100.v20250514-1759 (org.eclipse.osgi 3.23.100.v20250514-1759)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.256
+!MESSAGE Software currently installed: Eclipse RCP 4.32.0.v20240601-0610 (org.eclipse.rcp.feature.group 4.32.0.v20240601-0610)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2025-11-02 19:49:18.257
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.257
+!MESSAGE OSGi System Bundle 3.23.100.v20250514-1759 (org.eclipse.osgi 3.23.100.v20250514-1759)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.257
+!MESSAGE OSGi System Bundle 3.23.200.v20250812-1847 (org.eclipse.osgi 3.23.200.v20250812-1847)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.257
+!MESSAGE OSGi System Bundle 3.20.0.v20240509-1421 (org.eclipse.osgi 3.20.0.v20240509-1421)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.257
+!MESSAGE OSGi System Bundle 3.18.200.v20221116-1324 (org.eclipse.osgi 3.18.200.v20221116-1324)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2025-11-02 19:49:18.257
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.257
+!MESSAGE From: Eclipse 4 Rich Client Platform 4.32.0.v20240528-0813 (org.eclipse.e4.rcp.feature.group 4.32.0.v20240528-0813)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.257
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.osgi [3.20.0.v20240509-1421,3.20.0.v20240509-1421]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2025-11-02 19:49:18.257
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.257
+!MESSAGE From: Eclipse RCP 4.32.0.v20240601-0610 (org.eclipse.rcp.feature.group 4.32.0.v20240601-0610)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.257
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.e4.rcp.feature.group [4.32.0.v20240528-0813,4.32.0.v20240528-0813]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2025-11-02 19:49:18.280
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2025-11-02 19:49:18.280
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.280
+!MESSAGE "Apache Commons Codec" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.280
+!MESSAGE "Core :: Utilities" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.280
+!MESSAGE "Core :: IO" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "Core :: Server" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2025-11-02 19:49:18.281
+!MESSAGE "Apache Commons Logging" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "Apache Mina SSHD :: OSGi" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "bcprov" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "Apache Ant" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "Git integration for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "Core :: Security" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2025-11-02 19:49:18.281
+!MESSAGE "slf4j-api" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "OSGi System Bundle" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "bcpg" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "Java implementation of Git" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "Java implementation of Git - optional Http support using Apache httpclient" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "jna" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2025-11-02 19:49:18.281
+!MESSAGE "Apache Apache HttpCore OSGi bundle" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "Apache Mina SSHD :: SFTP" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "bcpkix" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "Apache Commons Compress" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "bcutil" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "Java implementation of Git - ssh support using Apache MINA sshd" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "Gson" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "XZ data compression" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "jna-platform" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "Core :: HTTP" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.281
+!MESSAGE "Java implementation of Git - GPG support using BouncyCastle" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2025-11-02 19:49:18.281
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.281
+!MESSAGE Software being installed: OSGi System Bundle 3.23.100.v20250514-1759 (org.eclipse.osgi 3.23.100.v20250514-1759)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.281
+!MESSAGE Software currently installed: Eclipse RCP 4.32.0.v20240601-0610 (org.eclipse.rcp.feature.group 4.32.0.v20240601-0610)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2025-11-02 19:49:18.281
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.281
+!MESSAGE OSGi System Bundle 3.23.100.v20250514-1759 (org.eclipse.osgi 3.23.100.v20250514-1759)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.281
+!MESSAGE OSGi System Bundle 3.23.200.v20250812-1847 (org.eclipse.osgi 3.23.200.v20250812-1847)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.281
+!MESSAGE OSGi System Bundle 3.20.0.v20240509-1421 (org.eclipse.osgi 3.20.0.v20240509-1421)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.281
+!MESSAGE OSGi System Bundle 3.18.200.v20221116-1324 (org.eclipse.osgi 3.18.200.v20221116-1324)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2025-11-02 19:49:18.281
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.282
+!MESSAGE From: Eclipse 4 Rich Client Platform 4.32.0.v20240528-0813 (org.eclipse.e4.rcp.feature.group 4.32.0.v20240528-0813)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.282
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.osgi [3.20.0.v20240509-1421,3.20.0.v20240509-1421]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2025-11-02 19:49:18.282
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.282
+!MESSAGE From: Eclipse RCP 4.32.0.v20240601-0610 (org.eclipse.rcp.feature.group 4.32.0.v20240601-0610)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.282
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.e4.rcp.feature.group [4.32.0.v20240528-0813,4.32.0.v20240528-0813]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2025-11-02 19:49:18.368
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2025-11-02 19:49:18.368
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "Apache Commons Codec" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "Core :: Utilities" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "Core :: IO" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "Core :: Server" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2025-11-02 19:49:18.369
+!MESSAGE "Apache Commons Logging" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "Apache Mina SSHD :: OSGi" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "bcprov" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "Apache Ant" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "Git integration for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "Core :: Security" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2025-11-02 19:49:18.369
+!MESSAGE "slf4j-api" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "OSGi System Bundle" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "bcpg" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "Java implementation of Git" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "Java implementation of Git - optional Http support using Apache httpclient" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "jna" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2025-11-02 19:49:18.369
+!MESSAGE "Apache Apache HttpCore OSGi bundle" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "Apache Mina SSHD :: SFTP" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "bcpkix" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "Apache Commons Compress" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "bcutil" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "Java implementation of Git - ssh support using Apache MINA sshd" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "Gson" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "XZ data compression" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "jna-platform" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "Core :: HTTP" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.369
+!MESSAGE "Java implementation of Git - GPG support using BouncyCastle" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2025-11-02 19:49:18.369
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.369
+!MESSAGE Software being installed: OSGi System Bundle 3.23.100.v20250514-1759 (org.eclipse.osgi 3.23.100.v20250514-1759)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.369
+!MESSAGE Software currently installed: Eclipse RCP 4.32.0.v20240601-0610 (org.eclipse.rcp.feature.group 4.32.0.v20240601-0610)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2025-11-02 19:49:18.369
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.369
+!MESSAGE OSGi System Bundle 3.23.100.v20250514-1759 (org.eclipse.osgi 3.23.100.v20250514-1759)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.369
+!MESSAGE OSGi System Bundle 3.23.200.v20250812-1847 (org.eclipse.osgi 3.23.200.v20250812-1847)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.369
+!MESSAGE OSGi System Bundle 3.20.0.v20240509-1421 (org.eclipse.osgi 3.20.0.v20240509-1421)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.369
+!MESSAGE OSGi System Bundle 3.18.200.v20221116-1324 (org.eclipse.osgi 3.18.200.v20221116-1324)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2025-11-02 19:49:18.369
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.369
+!MESSAGE From: Eclipse 4 Rich Client Platform 4.32.0.v20240528-0813 (org.eclipse.e4.rcp.feature.group 4.32.0.v20240528-0813)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.369
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.osgi [3.20.0.v20240509-1421,3.20.0.v20240509-1421]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2025-11-02 19:49:18.369
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.369
+!MESSAGE From: Eclipse RCP 4.32.0.v20240601-0610 (org.eclipse.rcp.feature.group 4.32.0.v20240601-0610)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.369
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.e4.rcp.feature.group [4.32.0.v20240528-0813,4.32.0.v20240528-0813]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2025-11-02 19:49:18.370
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2025-11-02 19:49:18.370
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.370
+!MESSAGE "Apache Commons Codec" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.370
+!MESSAGE "Core :: Utilities" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.370
+!MESSAGE "Core :: IO" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.370
+!MESSAGE "Core :: Server" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2025-11-02 19:49:18.370
+!MESSAGE "Apache Commons Logging" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.370
+!MESSAGE "Apache Mina SSHD :: OSGi" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.370
+!MESSAGE "bcprov" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.370
+!MESSAGE "Apache Ant" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.370
+!MESSAGE "Git integration for Eclipse" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.370
+!MESSAGE "Core :: Security" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2025-11-02 19:49:18.370
+!MESSAGE "slf4j-api" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.370
+!MESSAGE "OSGi System Bundle" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.370
+!MESSAGE "bcpg" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.370
+!MESSAGE "Java implementation of Git" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.370
+!MESSAGE "Java implementation of Git - optional Http support using Apache httpclient" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.370
+!MESSAGE "jna" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2025-11-02 19:49:18.370
+!MESSAGE "Apache Apache HttpCore OSGi bundle" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.370
+!MESSAGE "Apache Mina SSHD :: SFTP" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.370
+!MESSAGE "bcpkix" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.370
+!MESSAGE "Apache Commons Compress" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.370
+!MESSAGE "bcutil" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.372
+!MESSAGE "Java implementation of Git - ssh support using Apache MINA sshd" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.372
+!MESSAGE "Gson" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.372
+!MESSAGE "XZ data compression" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.372
+!MESSAGE "jna-platform" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.372
+!MESSAGE "Core :: HTTP" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2025-11-02 19:49:18.372
+!MESSAGE "Java implementation of Git - GPG support using BouncyCastle" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2025-11-02 19:49:18.372
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.372
+!MESSAGE Software being installed: OSGi System Bundle 3.23.100.v20250514-1759 (org.eclipse.osgi 3.23.100.v20250514-1759)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.372
+!MESSAGE Software currently installed: Eclipse RCP 4.32.0.v20240601-0610 (org.eclipse.rcp.feature.group 4.32.0.v20240601-0610)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2025-11-02 19:49:18.372
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.372
+!MESSAGE OSGi System Bundle 3.23.100.v20250514-1759 (org.eclipse.osgi 3.23.100.v20250514-1759)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.372
+!MESSAGE OSGi System Bundle 3.23.200.v20250812-1847 (org.eclipse.osgi 3.23.200.v20250812-1847)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.372
+!MESSAGE OSGi System Bundle 3.20.0.v20240509-1421 (org.eclipse.osgi 3.20.0.v20240509-1421)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.372
+!MESSAGE OSGi System Bundle 3.18.200.v20221116-1324 (org.eclipse.osgi 3.18.200.v20221116-1324)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2025-11-02 19:49:18.372
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.372
+!MESSAGE From: Eclipse 4 Rich Client Platform 4.32.0.v20240528-0813 (org.eclipse.e4.rcp.feature.group 4.32.0.v20240528-0813)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.372
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.osgi [3.20.0.v20240509-1421,3.20.0.v20240509-1421]
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2025-11-02 19:49:18.372
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.372
+!MESSAGE From: Eclipse RCP 4.32.0.v20240601-0610 (org.eclipse.rcp.feature.group 4.32.0.v20240601-0610)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2025-11-02 19:49:18.372
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.e4.rcp.feature.group [4.32.0.v20240528-0813,4.32.0.v20240528-0813]
+!SESSION 2025-11-02 19:56:30.594 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=23.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.eclemma.core 4 0 2025-11-02 19:58:37.481
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.eclemma.core [152]
+  Unresolved requirement: Require-Bundle: org.jacoco.core; bundle-version="[0.8.12,0.8.13)"
+    -> Bundle-SymbolicName: org.jacoco.core; bundle-version="0.8.12.202403310830"
+       org.jacoco.core [485]
+  Unresolved requirement: Require-Bundle: org.jacoco.report; bundle-version="[0.8.12,0.8.13)"
+    -> Bundle-SymbolicName: org.jacoco.report; bundle-version="0.8.12.202403310830"
+       org.jacoco.report [486]
+         Unresolved requirement: Import-Package: org.jacoco.core; version="[0.8.12,0.8.13)"
+           -> Export-Package: org.jacoco.core; bundle-symbolic-name="org.jacoco.core"; bundle-version="0.8.12.202403310830"; version="0.8.12"
+         Unresolved requirement: Import-Package: org.jacoco.core.runtime; version="[0.8.12,0.8.13)"
+           -> Export-Package: org.jacoco.core.runtime; bundle-symbolic-name="org.jacoco.core"; bundle-version="0.8.12.202403310830"; version="0.8.12"; uses:="org.jacoco.core.data,org.objectweb.asm"
+         Unresolved requirement: Import-Package: org.jacoco.core.analysis; version="[0.8.12,0.8.13)"
+           -> Export-Package: org.jacoco.core.analysis; bundle-symbolic-name="org.jacoco.core"; bundle-version="0.8.12.202403310830"; version="0.8.12"; uses:="org.jacoco.core.data,org.jacoco.core.internal.analysis"
+         Unresolved requirement: Import-Package: org.jacoco.core.data; version="[0.8.12,0.8.13)"
+           -> Export-Package: org.jacoco.core.data; bundle-symbolic-name="org.jacoco.core"; bundle-version="0.8.12.202403310830"; version="0.8.12"; uses:="org.jacoco.core.internal.data"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.jacoco.core [osgi.identity; type="osgi.bundle"; version:Version="0.8.12.202403310830"; osgi.identity="org.jacoco.core"] because it is exposed to package 'org.objectweb.asm' from resources org.objectweb.asm [osgi.identity; type="osgi.bundle"; version:Version="9.7.1"; osgi.identity="org.objectweb.asm"] and org.objectweb.asm [osgi.identity; type="osgi.bundle"; version:Version="9.8.0"; osgi.identity="org.objectweb.asm"] via two dependency chains.
+
+Chain 1:
+  org.jacoco.core [osgi.identity; type="osgi.bundle"; version:Version="0.8.12.202403310830"; osgi.identity="org.jacoco.core"]
+    import: (&(osgi.wiring.package=org.objectweb.asm)(&(version>=9.7.0)(!(version>=9.8.0))))
+     |
+    export: osgi.wiring.package: org.objectweb.asm
+  org.objectweb.asm [osgi.identity; type="osgi.bundle"; version:Version="9.7.1"; osgi.identity="org.objectweb.asm"]
+
+Chain 2:
+  org.jacoco.core [osgi.identity; type="osgi.bundle"; version:Version="0.8.12.202403310830"; osgi.identity="org.jacoco.core"]
+    import: (&(osgi.wiring.package=org.objectweb.asm.commons)(&(version>=9.7.0)(!(version>=9.8.0))))
+     |
+    export: osgi.wiring.package=org.objectweb.asm.commons; uses:=org.objectweb.asm
+  org.objectweb.asm.commons [osgi.identity; type="osgi.bundle"; version:Version="9.7.0"; osgi.identity="org.objectweb.asm.commons"]
+    import: (&(osgi.wiring.package=org.objectweb.asm)(version>=9.7.0))
+     |
+    export: osgi.wiring.package: org.objectweb.asm
+  org.objectweb.asm [osgi.identity; type="osgi.bundle"; version:Version="9.8.0"; osgi.identity="org.objectweb.asm"]
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.eclemma.ui 4 0 2025-11-02 19:58:37.494
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.eclemma.ui [154]
+  Unresolved requirement: Require-Bundle: org.jacoco.core; bundle-version="[0.8.12,0.8.13)"
+    -> Bundle-SymbolicName: org.jacoco.core; bundle-version="0.8.12.202403310830"
+       org.jacoco.core [485]
+  Unresolved requirement: Require-Bundle: org.eclipse.eclemma.core
+    -> Bundle-SymbolicName: org.eclipse.eclemma.core; bundle-version="3.1.9.202405260028"; singleton:="true"
+       org.eclipse.eclemma.core [152]
+         Unresolved requirement: Require-Bundle: org.jacoco.core; bundle-version="[0.8.12,0.8.13)"
+           -> Bundle-SymbolicName: org.jacoco.core; bundle-version="0.8.12.202403310830"
+         Unresolved requirement: Require-Bundle: org.jacoco.report; bundle-version="[0.8.12,0.8.13)"
+           -> Bundle-SymbolicName: org.jacoco.report; bundle-version="0.8.12.202403310830"
+              org.jacoco.report [486]
+                Unresolved requirement: Import-Package: org.jacoco.core; version="[0.8.12,0.8.13)"
+                  -> Export-Package: org.jacoco.core; bundle-symbolic-name="org.jacoco.core"; bundle-version="0.8.12.202403310830"; version="0.8.12"
+                Unresolved requirement: Import-Package: org.jacoco.core.runtime; version="[0.8.12,0.8.13)"
+                  -> Export-Package: org.jacoco.core.runtime; bundle-symbolic-name="org.jacoco.core"; bundle-version="0.8.12.202403310830"; version="0.8.12"; uses:="org.jacoco.core.data,org.objectweb.asm"
+                Unresolved requirement: Import-Package: org.jacoco.core.analysis; version="[0.8.12,0.8.13)"
+                  -> Export-Package: org.jacoco.core.analysis; bundle-symbolic-name="org.jacoco.core"; bundle-version="0.8.12.202403310830"; version="0.8.12"; uses:="org.jacoco.core.data,org.jacoco.core.internal.analysis"
+                Unresolved requirement: Import-Package: org.jacoco.core.data; version="[0.8.12,0.8.13)"
+                  -> Export-Package: org.jacoco.core.data; bundle-symbolic-name="org.jacoco.core"; bundle-version="0.8.12.202403310830"; version="0.8.12"; uses:="org.jacoco.core.internal.data"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.jacoco.core [osgi.identity; type="osgi.bundle"; version:Version="0.8.12.202403310830"; osgi.identity="org.jacoco.core"] because it is exposed to package 'org.objectweb.asm' from resources org.objectweb.asm [osgi.identity; type="osgi.bundle"; version:Version="9.7.1"; osgi.identity="org.objectweb.asm"] and org.objectweb.asm [osgi.identity; type="osgi.bundle"; version:Version="9.8.0"; osgi.identity="org.objectweb.asm"] via two dependency chains.
+
+Chain 1:
+  org.jacoco.core [osgi.identity; type="osgi.bundle"; version:Version="0.8.12.202403310830"; osgi.identity="org.jacoco.core"]
+    import: (&(osgi.wiring.package=org.objectweb.asm)(&(version>=9.7.0)(!(version>=9.8.0))))
+     |
+    export: osgi.wiring.package: org.objectweb.asm
+  org.objectweb.asm [osgi.identity; type="osgi.bundle"; version:Version="9.7.1"; osgi.identity="org.objectweb.asm"]
+
+Chain 2:
+  org.jacoco.core [osgi.identity; type="osgi.bundle"; version:Version="0.8.12.202403310830"; osgi.identity="org.jacoco.core"]
+    import: (&(osgi.wiring.package=org.objectweb.asm.commons)(&(version>=9.7.0)(!(version>=9.8.0))))
+     |
+    export: osgi.wiring.package=org.objectweb.asm.commons; uses:=org.objectweb.asm
+  org.objectweb.asm.commons [osgi.identity; type="osgi.bundle"; version:Version="9.7.0"; osgi.identity="org.objectweb.asm.commons"]
+    import: (&(osgi.wiring.package=org.objectweb.asm)(version>=9.7.0))
+     |
+    export: osgi.wiring.package: org.objectweb.asm
+  org.objectweb.asm [osgi.identity; type="osgi.bundle"; version:Version="9.8.0"; osgi.identity="org.objectweb.asm"]
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.egit.core 4 0 2025-11-02 19:58:37.496
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.core [156]
+  Unresolved requirement: Import-Package: org.eclipse.jgit.transport.http.apache; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.jgit.transport.http.apache; bundle-symbolic-name="org.eclipse.jgit.http.apache"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.apache.http.client,  org.eclipse.jgit.transport.http,  org.apache.http.entity,  org.apache.http.client.methods,  javax.net.ssl,  org.eclipse.jgit.util,  org.apache.http"
+       org.eclipse.jgit.http.apache [270]
+         Unresolved requirement: Import-Package: org.apache.http.client.config; version="[4.4.0,5.0.0)"
+           -> Export-Package: org.apache.http.client.config; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http"
+              org.apache.httpcomponents.httpclient [64]
+                Unresolved requirement: Import-Package: org.apache.commons.logging; version="[1.1.0,1.3.0)"
+         Unresolved requirement: Import-Package: org.apache.http.client; version="[4.4.0,5.0.0)"
+           -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.egit.ui 4 0 2025-11-02 19:58:37.499
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.ui [159]
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.storage; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.storage; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.core.test"
+       org.eclipse.egit.core [156]
+         Unresolved requirement: Import-Package: org.eclipse.jgit.transport.http.apache; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.jgit.transport.http.apache; bundle-symbolic-name="org.eclipse.jgit.http.apache"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.apache.http.client,  org.eclipse.jgit.transport.http,  org.apache.http.entity,  org.apache.http.client.methods,  javax.net.ssl,  org.eclipse.jgit.util,  org.apache.http"
+              org.eclipse.jgit.http.apache [270]
+                Unresolved requirement: Import-Package: org.apache.http.client.config; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.client.config; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http"
+                     org.apache.httpcomponents.httpclient [64]
+                       Unresolved requirement: Import-Package: org.apache.commons.logging; version="[1.1.0,1.3.0)"
+                Unresolved requirement: Import-Package: org.apache.http.client; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.synchronize; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.synchronize; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.internal; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.import,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.gitflow"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.hosts; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.hosts; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.rebase; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.rebase; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.info; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.info; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.eclipse.jgit.lib"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.credentials; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.credentials; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.eclipse.jgit.lib"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.ui.test,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.core.junit"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.credentials; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.credentials; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.project; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.project; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test,org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.util; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.util; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.signing; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.signing; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.gerrit; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.gerrit; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.util; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.util; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.efs; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.efs; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.info; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.info; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.op; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.op; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui.test,  org.eclipse.egit.ui,  org.eclipse.egit.gitflow,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.github.core,  org.eclipse.egit.core.junit"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.indexdiff; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.indexdiff; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.job; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.job; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.gitflow.ui,org.eclipse.egit.gitflow"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.attributes; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.attributes; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.eclipse.jgit.lib"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.settings; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.settings; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.synchronize.dto; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.synchronize.dto; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.epp.mpc.core 4 0 2025-11-02 19:58:37.502
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.epp.mpc.core [169]
+  Unresolved requirement: Require-Bundle: org.eclipse.userstorage.oauth; bundle-version="[1.0.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.userstorage.oauth; bundle-version="1.1.0.v20190307-0457"; singleton:="true"
+       org.eclipse.userstorage.oauth [470]
+         Unresolved requirement: Import-Package: org.apache.http.client; version="[4.3.0,5.0.0)"
+           -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+              org.apache.httpcomponents.httpclient [64]
+                Unresolved requirement: Import-Package: org.apache.commons.logging; version="[1.1.0,1.3.0)"
+  Unresolved requirement: Require-Bundle: org.eclipse.userstorage; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.userstorage; bundle-version="1.2.0.v20210517-0327"; singleton:="true"
+       org.eclipse.userstorage [469]
+         Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.3.0,5.0.0)"
+           -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+         Unresolved requirement: Import-Package: org.apache.http.client; version="[4.3.0,5.0.0)"
+           -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.epp.mpc.core.win32 4 0 2025-11-02 19:58:37.503
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.epp.mpc.core.win32 [170]
+  Unresolved requirement: Import-Package: org.eclipse.epp.internal.mpc.core.transport.httpclient; bundle-version="1.10.3"
+    -> Export-Package: org.eclipse.epp.internal.mpc.core.transport.httpclient; bundle-symbolic-name="org.eclipse.epp.mpc.core"; bundle-version="1.10.3.v20240221-1216"; version="0.0.0"; x-friends:="org.eclipse.epp.mpc.core.win32"; uses:="org.apache.http.auth,  org.apache.http.protocol,  org.apache.http.impl.client,  org.apache.http,  org.eclipse.epp.mpc.core.service,  org.apache.http.client,  org.eclipse.core.runtime,  org.apache.http.client.fluent,  org.apache.http.client.protocol"
+       org.eclipse.epp.mpc.core [169]
+         Unresolved requirement: Require-Bundle: org.eclipse.userstorage.oauth; bundle-version="[1.0.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.userstorage.oauth; bundle-version="1.1.0.v20190307-0457"; singleton:="true"
+              org.eclipse.userstorage.oauth [470]
+                Unresolved requirement: Import-Package: org.apache.http.client; version="[4.3.0,5.0.0)"
+                  -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+                     org.apache.httpcomponents.httpclient [64]
+                       Unresolved requirement: Import-Package: org.apache.commons.logging; version="[1.1.0,1.3.0)"
+         Unresolved requirement: Require-Bundle: org.eclipse.userstorage; bundle-version="[1.1.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.userstorage; bundle-version="1.2.0.v20210517-0327"; singleton:="true"
+              org.eclipse.userstorage [469]
+                Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.3.0,5.0.0)"
+                  -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+                Unresolved requirement: Import-Package: org.apache.http.client; version="[4.3.0,5.0.0)"
+                  -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2025-11-02 19:58:37.506
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.epp.mpc.ui [172]
+  Unresolved requirement: Require-Bundle: org.eclipse.userstorage; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.userstorage; bundle-version="1.2.0.v20210517-0327"; singleton:="true"
+       org.eclipse.userstorage [469]
+         Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.3.0,5.0.0)"
+           -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+              org.apache.httpcomponents.httpclient [64]
+                Unresolved requirement: Import-Package: org.apache.commons.logging; version="[1.1.0,1.3.0)"
+         Unresolved requirement: Import-Package: org.apache.http.client; version="[4.3.0,5.0.0)"
+           -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+  Unresolved requirement: Require-Bundle: org.eclipse.epp.mpc.core; bundle-version="[1.10.3,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.epp.mpc.core; bundle-version="1.10.3.v20240221-1216"; singleton:="true"
+       org.eclipse.epp.mpc.core [169]
+         Unresolved requirement: Require-Bundle: org.eclipse.userstorage.oauth; bundle-version="[1.0.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.userstorage.oauth; bundle-version="1.1.0.v20190307-0457"; singleton:="true"
+              org.eclipse.userstorage.oauth [470]
+                Unresolved requirement: Import-Package: org.apache.http.client; version="[4.3.0,5.0.0)"
+                  -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+         Unresolved requirement: Require-Bundle: org.eclipse.userstorage; bundle-version="[1.1.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.userstorage; bundle-version="1.2.0.v20210517-0327"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY ch.qos.logback.classic 1 0 2025-11-02 19:58:37.875
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.jgit.http.apache 4 0 2025-11-02 19:58:37.909
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jgit.http.apache [270]
+  Unresolved requirement: Import-Package: org.apache.http.client.config; version="[4.4.0,5.0.0)"
+    -> Export-Package: org.apache.http.client.config; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http"
+       org.apache.httpcomponents.httpclient [64]
+         Unresolved requirement: Import-Package: org.apache.commons.logging; version="[1.1.0,1.3.0)"
+  Unresolved requirement: Import-Package: org.apache.http.client; version="[4.4.0,5.0.0)"
+    -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.commons.repositories.http.core 4 0 2025-11-02 19:58:37.985
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.repositories.http.core [320]
+  Unresolved requirement: Import-Package: org.apache.http.auth.params; version="[4.5.2,4.6.0)"
+    -> Export-Package: org.apache.http.auth.params; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http.params"
+       org.apache.httpcomponents.httpclient [64]
+         Unresolved requirement: Import-Package: org.apache.commons.logging; version="[1.1.0,1.3.0)"
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.5.2,4.6.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.egit.ui 4 0 2025-11-02 19:58:37.996
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.egit.ui [330]
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.egit.core.internal; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.import,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.gitflow"
+       org.eclipse.egit.core [156]
+         Unresolved requirement: Import-Package: org.eclipse.jgit.transport.http.apache; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.jgit.transport.http.apache; bundle-symbolic-name="org.eclipse.jgit.http.apache"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.apache.http.client,  org.eclipse.jgit.transport.http,  org.apache.http.entity,  org.apache.http.client.methods,  javax.net.ssl,  org.eclipse.jgit.util,  org.apache.http"
+              org.eclipse.jgit.http.apache [270]
+                Unresolved requirement: Import-Package: org.apache.http.client.config; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.client.config; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http"
+                     org.apache.httpcomponents.httpclient [64]
+                       Unresolved requirement: Import-Package: org.apache.commons.logging; version="[1.1.0,1.3.0)"
+                Unresolved requirement: Import-Package: org.apache.http.client; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.synchronize; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.egit.core.synchronize; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.staging; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.staging; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-internal:="true"
+       org.eclipse.egit.ui [159]
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.storage; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.storage; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.core.test"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.synchronize; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.synchronize; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.import,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.gitflow"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.hosts; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.hosts; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.rebase; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.rebase; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.info; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.info; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.eclipse.jgit.lib"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.credentials; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.credentials; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.eclipse.jgit.lib"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.ui.test,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.core.junit"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.credentials; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.credentials; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.project; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.project; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test,org.eclipse.egit.gitflow.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.util; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.util; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.signing; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.signing; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.gerrit; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.gerrit; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.util; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.util; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.efs; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.efs; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.info; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.info; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.op; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.op; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui.test,  org.eclipse.egit.ui,  org.eclipse.egit.gitflow,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.github.core,  org.eclipse.egit.core.junit"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.indexdiff; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.indexdiff; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.job; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.job; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.gitflow.ui,org.eclipse.egit.gitflow"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.attributes; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.attributes; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.eclipse.jgit.lib"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.settings; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.settings; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.synchronize.dto; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.synchronize.dto; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.egit.ui; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.egit.core; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.ui.test,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.core.junit"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.commit; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.commit; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.synchronize.model; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.synchronize.model; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-internal:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.git.core 4 0 2025-11-02 19:58:37.999
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.git.core [331]
+  Unresolved requirement: Require-Bundle: org.eclipse.egit.core; bundle-version="0.0.0"
+    -> Bundle-SymbolicName: org.eclipse.egit.core; bundle-version="6.10.0.202406032230-r"; singleton:="true"
+       org.eclipse.egit.core [156]
+         Unresolved requirement: Import-Package: org.eclipse.jgit.transport.http.apache; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.jgit.transport.http.apache; bundle-symbolic-name="org.eclipse.jgit.http.apache"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.apache.http.client,  org.eclipse.jgit.transport.http,  org.apache.http.entity,  org.apache.http.client.methods,  javax.net.ssl,  org.eclipse.jgit.util,  org.apache.http"
+              org.eclipse.jgit.http.apache [270]
+                Unresolved requirement: Import-Package: org.apache.http.client.config; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.client.config; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http"
+                     org.apache.httpcomponents.httpclient [64]
+                       Unresolved requirement: Import-Package: org.apache.commons.logging; version="[1.1.0,1.3.0)"
+                Unresolved requirement: Import-Package: org.apache.http.client; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.git.ui 4 0 2025-11-02 19:58:38.010
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.git.ui [332]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.git.core; bundle-version="4.3.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.git.core; bundle-version="4.3.0.v20240509-0539"; singleton:="true"
+       org.eclipse.mylyn.git.core [331]
+         Unresolved requirement: Require-Bundle: org.eclipse.egit.core; bundle-version="0.0.0"
+           -> Bundle-SymbolicName: org.eclipse.egit.core; bundle-version="6.10.0.202406032230-r"; singleton:="true"
+              org.eclipse.egit.core [156]
+                Unresolved requirement: Import-Package: org.eclipse.jgit.transport.http.apache; version="[6.10.0,6.11.0)"
+                  -> Export-Package: org.eclipse.jgit.transport.http.apache; bundle-symbolic-name="org.eclipse.jgit.http.apache"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.apache.http.client,  org.eclipse.jgit.transport.http,  org.apache.http.entity,  org.apache.http.client.methods,  javax.net.ssl,  org.eclipse.jgit.util,  org.apache.http"
+                     org.eclipse.jgit.http.apache [270]
+                       Unresolved requirement: Import-Package: org.apache.http.client.config; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.client.config; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http"
+                            org.apache.httpcomponents.httpclient [64]
+                              Unresolved requirement: Import-Package: org.apache.commons.logging; version="[1.1.0,1.3.0)"
+                       Unresolved requirement: Import-Package: org.apache.http.client; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+  Unresolved requirement: Require-Bundle: org.eclipse.egit.core; bundle-version="0.0.0"
+    -> Bundle-SymbolicName: org.eclipse.egit.core; bundle-version="6.10.0.202406032230-r"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.egit.ui; bundle-version="0.0.0"
+    -> Bundle-SymbolicName: org.eclipse.egit.ui; bundle-version="6.10.0.202406032230-r"; singleton:="true"
+       org.eclipse.egit.ui [159]
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.storage; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.storage; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.core.test"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.synchronize; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.synchronize; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.import,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.gitflow"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.hosts; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.hosts; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.rebase; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.rebase; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.info; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.info; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.eclipse.jgit.lib"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.credentials; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.credentials; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.eclipse.jgit.lib"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.ui.test,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.core.junit"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.credentials; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.credentials; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.project; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.project; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test,org.eclipse.egit.gitflow.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.util; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.util; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.signing; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.signing; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.gerrit; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.gerrit; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.util; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.util; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.efs; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.efs; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.info; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.info; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.op; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.op; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui.test,  org.eclipse.egit.ui,  org.eclipse.egit.gitflow,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.github.core,  org.eclipse.egit.core.junit"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.indexdiff; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.indexdiff; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.job; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.job; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.gitflow.ui,org.eclipse.egit.gitflow"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.attributes; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.attributes; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.eclipse.jgit.lib"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.settings; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.settings; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.synchronize.dto; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.synchronize.dto; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.github.ui 4 0 2025-11-02 19:58:38.016
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.github.ui [335]
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.egit.ui; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.gitflow.ui"
+       org.eclipse.egit.ui [159]
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.storage; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.storage; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.core.test"
+              org.eclipse.egit.core [156]
+                Unresolved requirement: Import-Package: org.eclipse.jgit.transport.http.apache; version="[6.10.0,6.11.0)"
+                  -> Export-Package: org.eclipse.jgit.transport.http.apache; bundle-symbolic-name="org.eclipse.jgit.http.apache"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.apache.http.client,  org.eclipse.jgit.transport.http,  org.apache.http.entity,  org.apache.http.client.methods,  javax.net.ssl,  org.eclipse.jgit.util,  org.apache.http"
+                     org.eclipse.jgit.http.apache [270]
+                       Unresolved requirement: Import-Package: org.apache.http.client.config; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.client.config; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http"
+                            org.apache.httpcomponents.httpclient [64]
+                              Unresolved requirement: Import-Package: org.apache.commons.logging; version="[1.1.0,1.3.0)"
+                       Unresolved requirement: Import-Package: org.apache.http.client; version="[4.4.0,5.0.0)"
+                         -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.synchronize; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.synchronize; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.import,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.gitflow"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.hosts; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.hosts; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.rebase; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.rebase; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.info; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.info; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.eclipse.jgit.lib"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.credentials; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.credentials; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.eclipse.jgit.lib"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.ui.test,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.core.junit"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.credentials; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.credentials; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.project; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.project; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test,org.eclipse.egit.gitflow.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.util; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.util; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.signing; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.signing; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.gerrit; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.gerrit; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.util; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.util; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.efs; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.efs; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.info; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.info; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.op; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.op; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui.test,  org.eclipse.egit.ui,  org.eclipse.egit.gitflow,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.github.core,  org.eclipse.egit.core.junit"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.indexdiff; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.indexdiff; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.job; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.job; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.gitflow.ui,org.eclipse.egit.gitflow"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.attributes; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.attributes; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.eclipse.jgit.lib"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.settings; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.settings; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.synchronize.dto; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.synchronize.dto; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+  Unresolved requirement: Import-Package: org.eclipse.mylyn.internal.github.core; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.mylyn.internal.github.core; bundle-symbolic-name="org.eclipse.mylyn.github.core"; bundle-version="6.5.0.v20240509-0539"; version="6.2.1"; x-friends:="org.eclipse.mylyn.github.ui"
+       org.eclipse.mylyn.github.core [333]
+         Unresolved requirement: Require-Bundle: org.eclipse.egit.core; bundle-version="6.2.0"
+           -> Bundle-SymbolicName: org.eclipse.egit.core; bundle-version="6.10.0.202406032230-r"; singleton:="true"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.import,org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.mylyn.internal.github.core.issue; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.mylyn.internal.github.core.issue; bundle-symbolic-name="org.eclipse.mylyn.github.core"; bundle-version="6.5.0.v20240509-0539"; version="6.2.1"; x-friends:="org.eclipse.mylyn.github.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.commit; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.commit; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.pull; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.pull; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-internal:="true"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.egit.core; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.ui.test,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.core.junit"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.components; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.components; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.fetch; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.fetch; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-internal:="true"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.branch; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.branch; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.mylyn.internal.github.core.pr; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.mylyn.internal.github.core.pr; bundle-symbolic-name="org.eclipse.mylyn.github.core"; bundle-version="6.5.0.v20240509-0539"; version="6.2.1"; x-friends:="org.eclipse.mylyn.github.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.op; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.egit.core.op; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui.test,  org.eclipse.egit.ui,  org.eclipse.egit.gitflow,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.github.core,  org.eclipse.egit.core.junit"
+  Unresolved requirement: Import-Package: org.eclipse.mylyn.internal.github.core.gist; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.mylyn.internal.github.core.gist; bundle-symbolic-name="org.eclipse.mylyn.github.core"; bundle-version="6.5.0.v20240509-0539"; version="6.2.1"; x-friends:="org.eclipse.mylyn.github.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.settings; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.egit.core.settings; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.provisional.wizards; version="[6.2.0,7.0.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.provisional.wizards; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-internal:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.jenkins.core 4 0 2025-11-02 19:58:38.024
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.jenkins.core [341]
+  Unresolved requirement: Import-Package: org.apache.http.client.entity; version="[4.5.2,4.6.0)"
+    -> Export-Package: org.apache.http.client.entity; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.entity"
+       org.apache.httpcomponents.httpclient [64]
+         Unresolved requirement: Import-Package: org.apache.commons.logging; version="[1.1.0,1.3.0)"
+  Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.2,4.6.0)"
+    -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.jenkins.ui 4 0 2025-11-02 19:58:38.029
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.jenkins.ui [342]
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.jenkins.core; bundle-version="4.3.0"
+    -> Bundle-SymbolicName: org.eclipse.mylyn.jenkins.core; bundle-version="4.3.0.v20240509-0539"; singleton:="true"
+       org.eclipse.mylyn.jenkins.core [341]
+         Unresolved requirement: Import-Package: org.apache.http.client.entity; version="[4.5.2,4.6.0)"
+           -> Export-Package: org.apache.http.client.entity; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.entity"
+              org.apache.httpcomponents.httpclient [64]
+                Unresolved requirement: Import-Package: org.apache.commons.logging; version="[1.1.0,1.3.0)"
+         Unresolved requirement: Import-Package: org.apache.http.client; version="[4.5.2,4.6.0)"
+           -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.userstorage 4 0 2025-11-02 19:58:38.147
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.userstorage [469]
+  Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.3.0,5.0.0)"
+    -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+       org.apache.httpcomponents.httpclient [64]
+         Unresolved requirement: Import-Package: org.apache.commons.logging; version="[1.1.0,1.3.0)"
+  Unresolved requirement: Import-Package: org.apache.http.client; version="[4.3.0,5.0.0)"
+    -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.userstorage.oauth 4 0 2025-11-02 19:58:38.151
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.userstorage.oauth [470]
+  Unresolved requirement: Import-Package: org.apache.http.client; version="[4.3.0,5.0.0)"
+    -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+       org.apache.httpcomponents.httpclient [64]
+         Unresolved requirement: Import-Package: org.apache.commons.logging; version="[1.1.0,1.3.0)"
+  Unresolved requirement: Import-Package: org.apache.http.client.fluent; version="[4.3.0,5.0.0)"
+    -> Export-Package: org.apache.http.client.fluent; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.concurrent,org.apache.http.conn.scheme,org.apache.http.entity,org.apache.http.impl.client"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.userstorage.ui 4 0 2025-11-02 19:58:38.153
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.userstorage.ui [471]
+  Unresolved requirement: Import-Package: org.apache.http.client.fluent; version="[4.3.0,5.0.0)"
+    -> Export-Package: org.apache.http.client.fluent; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client,org.apache.http.concurrent,org.apache.http.conn.scheme,org.apache.http.entity,org.apache.http.impl.client"
+       org.apache.httpcomponents.httpclient [64]
+         Unresolved requirement: Import-Package: org.apache.commons.logging; version="[1.1.0,1.3.0)"
+  Unresolved requirement: Import-Package: org.eclipse.userstorage.internal
+    -> Export-Package: org.eclipse.userstorage.internal; bundle-symbolic-name="org.eclipse.userstorage"; bundle-version="1.2.0.v20210517-0327"; version="1.1.0"; x-friends:="org.eclipse.userstorage.tests,  org.eclipse.userstorage.oauth,  org.eclipse.userstorage.ui,  org.eclipse.userstorage.sdk"; uses:="org.apache.http.client.fluent,  org.apache.http"
+       org.eclipse.userstorage [469]
+         Unresolved requirement: Import-Package: org.apache.http.auth; version="[4.3.0,5.0.0)"
+           -> Export-Package: org.apache.http.auth; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.config,org.apache.http.params,org.apache.http.protocol,org.ietf.jgss"
+         Unresolved requirement: Import-Package: org.apache.http.client; version="[4.3.0,5.0.0)"
+           -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.egit.gitflow 4 0 2025-11-02 19:58:38.158
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.gitflow [549]
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.job; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.job; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.gitflow.ui,org.eclipse.egit.gitflow"
+       org.eclipse.egit.core [156]
+         Unresolved requirement: Import-Package: org.eclipse.jgit.transport.http.apache; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.jgit.transport.http.apache; bundle-symbolic-name="org.eclipse.jgit.http.apache"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.apache.http.client,  org.eclipse.jgit.transport.http,  org.apache.http.entity,  org.apache.http.client.methods,  javax.net.ssl,  org.eclipse.jgit.util,  org.apache.http"
+              org.eclipse.jgit.http.apache [270]
+                Unresolved requirement: Import-Package: org.apache.http.client.config; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.client.config; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http"
+                     org.apache.httpcomponents.httpclient [64]
+                       Unresolved requirement: Import-Package: org.apache.commons.logging; version="[1.1.0,1.3.0)"
+                Unresolved requirement: Import-Package: org.apache.http.client; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.op; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.op; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui.test,  org.eclipse.egit.ui,  org.eclipse.egit.gitflow,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.github.core,  org.eclipse.egit.core.junit"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.egit.gitflow.ui 4 0 2025-11-02 19:58:38.165
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.gitflow.ui [550]
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.job; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.job; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.gitflow.ui,org.eclipse.egit.gitflow"
+       org.eclipse.egit.core [156]
+         Unresolved requirement: Import-Package: org.eclipse.jgit.transport.http.apache; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.jgit.transport.http.apache; bundle-symbolic-name="org.eclipse.jgit.http.apache"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.apache.http.client,  org.eclipse.jgit.transport.http,  org.apache.http.entity,  org.apache.http.client.methods,  javax.net.ssl,  org.eclipse.jgit.util,  org.apache.http"
+              org.eclipse.jgit.http.apache [270]
+                Unresolved requirement: Import-Package: org.apache.http.client.config; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.client.config; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http"
+                     org.apache.httpcomponents.httpclient [64]
+                       Unresolved requirement: Import-Package: org.apache.commons.logging; version="[1.1.0,1.3.0)"
+                Unresolved requirement: Import-Package: org.apache.http.client; version="[4.4.0,5.0.0)"
+                  -> Export-Package: org.apache.http.client; bundle-symbolic-name="org.apache.httpcomponents.httpclient"; bundle-version="4.5.14"; version="4.5.14"; uses:="org.apache.http,org.apache.http.auth,org.apache.http.client.methods,org.apache.http.conn,org.apache.http.conn.routing,org.apache.http.cookie,org.apache.http.params,org.apache.http.protocol"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.rebase; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.rebase; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.gitflow.ui"
+       org.eclipse.egit.ui [159]
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.storage; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.storage; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.core.test"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.synchronize; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.synchronize; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.import,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.gitflow"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.hosts; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.hosts; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.rebase; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.rebase; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.info; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.info; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.eclipse.jgit.lib"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.credentials; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.credentials; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.eclipse.jgit.lib"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.ui.test,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.core.junit"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.credentials; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.credentials; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.project; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.project; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test,org.eclipse.egit.gitflow.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.util; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.util; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.signing; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.signing; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.gerrit; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.gerrit; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.util; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.util; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.efs; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.efs; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.info; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.info; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.op; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.op; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui.test,  org.eclipse.egit.ui,  org.eclipse.egit.gitflow,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.github.core,  org.eclipse.egit.core.junit"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.indexdiff; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.indexdiff; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.job; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.job; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.gitflow.ui,org.eclipse.egit.gitflow"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.attributes; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.attributes; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.eclipse.jgit.lib"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.settings; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.settings; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.synchronize.dto; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.synchronize.dto; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.ui.test,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.core.junit"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.ui; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.selection; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.selection; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.decorators; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.decorators; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.expressions; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.expressions; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.push; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.push; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.project; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.project; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test,org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.gitflow; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.gitflow; bundle-symbolic-name="org.eclipse.egit.gitflow"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.osgi.framework,  org.eclipse.jgit.transport,  org.eclipse.core.runtime,  org.eclipse.jgit.lib,  org.eclipse.jgit.revwalk"
+       org.eclipse.egit.gitflow [549]
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.job; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.internal.job; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.gitflow.ui,org.eclipse.egit.gitflow"
+         Unresolved requirement: Import-Package: org.eclipse.egit.core.op; version="[6.10.0,6.11.0)"
+           -> Export-Package: org.eclipse.egit.core.op; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui.test,  org.eclipse.egit.ui,  org.eclipse.egit.gitflow,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.github.core,  org.eclipse.egit.core.junit"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.actions; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.actions; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.import,org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.gitflow.op; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.gitflow.op; bundle-symbolic-name="org.eclipse.egit.gitflow"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; uses:="org.eclipse.jgit.transport,  org.eclipse.core.runtime.jobs,  org.eclipse.core.runtime,  org.eclipse.jgit.api,  org.eclipse.egit.gitflow,  org.eclipse.jgit.revwalk,  org.eclipse.jgit.lib,  org.eclipse.egit.core.op"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.commit; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.commit; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.settings; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.settings; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.repository.tree; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.repository.tree; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.dialogs; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.dialogs; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.op; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.op; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui.test,  org.eclipse.egit.ui,  org.eclipse.egit.gitflow,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.github.core,  org.eclipse.egit.core.junit"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.core.internal; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.import,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.gitflow"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.components; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.components; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.ui.internal.branch; version="[6.10.0,6.11.0)"
+    -> Export-Package: org.eclipse.egit.ui.internal.branch; bundle-symbolic-name="org.eclipse.egit.ui"; bundle-version="6.10.0.202406032230-r"; version="6.10.0"; x-friends:="org.eclipse.egit.gitflow.ui"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY ch.qos.logback.classic 1 0 2025-11-02 19:58:47.143
+!MESSAGE Logback config file: C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2025-11-02 19:58:55.457
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.eclemma.ui.CoverageView" id and the "Coverage" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2025-11-02 19:58:55.458
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.egit.ui.RepositoriesView" id and the "Git Repositories" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2025-11-02 19:58:55.460
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.egit.ui.StagingView" id and the "Git Staging" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2025-11-02 19:58:55.462
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.egit.ui.InteractiveRebaseView" id and the "Git Interactive Rebase" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2025-11-02 19:58:55.463
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.egit.ui.CompareTreeView" id and the "Git Tree Compare" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2025-11-02 19:58:55.465
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.egit.ui.ReflogView" id and the "Git Reflog" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.ui 4 0 2025-11-02 20:00:22.123
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoSuchMethodError: 'org.eclipse.jetty.util.component.Environment org.eclipse.jetty.util.component.Environment.ensure(java.lang.String)'
+	at org.eclipse.jetty.ee8.nested.ContextHandler.<clinit>(ContextHandler.java:141)
+	at org.eclipse.equinox.http.jetty.internal.HttpServerManager.createHttpContext(HttpServerManager.java:253)
+	at org.eclipse.equinox.http.jetty.internal.HttpServerManager.updated(HttpServerManager.java:164)
+	at org.eclipse.equinox.http.jetty.internal.Activator.startServer(Activator.java:240)
+	at org.eclipse.equinox.http.jetty.JettyConfigurator.startServer(JettyConfigurator.java:52)
+	at org.eclipse.help.internal.server.JettyHelpServer$StartServerThread.run(JettyHelpServer.java:84)

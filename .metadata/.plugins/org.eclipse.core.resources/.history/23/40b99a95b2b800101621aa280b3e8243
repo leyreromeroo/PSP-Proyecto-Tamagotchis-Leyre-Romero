@@ -1,0 +1,35 @@
+package com.leyre.romero.PSP_Proyecto_Tamagotchis;
+
+/**
+ * Hello world!
+ */
+public class App {
+	public static void main(String[] args) {
+		// Crear 5 tamagotchis
+		Tamagotchis[] tamagotchi = new Tamagotchis[5];
+		Thread[] hilos = new Thread[5];
+
+		for (int i = 0; i < tamagotchi.length; i++) {
+			tamagotchi[i] = new Tamagotchis("Tamagotchi-" + (i + 1));
+			hilos[i] = new Thread(tamagotchi[i]);
+			hilos[i].start();
+			
+			// El hilo principal espera a que ambos terminen
+			try {
+				hilos[i].join();
+				hilos[i].join();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			} 
+
+		}
+		
+		for (int i = 0; i < tamagotchi.length; i++) {
+			if(tamagotchi[i].getVida()<=0) {
+				hilos[i].interrupt();
+			}
+		}
+		
+
+	}
+}

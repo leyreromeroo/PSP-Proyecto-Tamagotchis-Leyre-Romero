@@ -124,3 +124,6 @@
 2025-11-03 11:46:40,822 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\PSP-Proyecto-Tamagotchis\src\test\resources
 2025-11-03 12:21:26,803 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\PSP-Proyecto-Tamagotchis\src\main\resources
 2025-11-03 12:21:26,809 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\PSP-Proyecto-Tamagotchis\src\test\resources
+2025-11-03 13:02:53,388 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\PSP-Proyecto-Tamagotchis\src\main\resources
+2025-11-03 13:02:53,392 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\PSP-Proyecto-Tamagotchis\src\test\resources
+2025-11-03 13:36:01,931 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

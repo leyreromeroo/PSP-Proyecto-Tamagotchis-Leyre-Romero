@@ -5,5 +5,4 @@ INDEX VERSION 1.134+C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\.metadata
 1865797976.index
 1525993134.index
 693378069.index
-3319015954.index
 3210610580.index

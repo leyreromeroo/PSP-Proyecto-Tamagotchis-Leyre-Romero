@@ -13,15 +13,6 @@ public class App {
 			tamagotchi[i] = new Tamagotchis("Tamagotchi-" + (i + 1));
 			hilos[i] = new Thread(tamagotchi[i]);
 			hilos[i].start();
-			
-			// El hilo principal espera a que ambos terminen
-			try {
-				hilos[i].join();
-				hilos[i].join();
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			} 
-
 		}
 		
 		for (int i = 0; i < tamagotchi.length; i++) {

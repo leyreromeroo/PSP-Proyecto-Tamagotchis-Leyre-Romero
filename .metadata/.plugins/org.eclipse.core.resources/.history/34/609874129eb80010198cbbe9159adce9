@@ -1,0 +1,35 @@
+package com.leyre.romero.PSP_Proyecto_Tamagotchis;
+
+public class Tamagotchis implements Runnable{
+	private String nombre;
+	private int vida = 5; 
+	
+	public Tamagotchis(String nombre) {
+		super();
+		this.nombre = nombre;
+	}
+	
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public int getVida() {
+		return vida;
+	}
+	
+
+	public void setVida(int vida) {
+		this.vida = vida;
+	}
+
+	@Override
+	public void run() {
+		
+		
+	}
+
+}

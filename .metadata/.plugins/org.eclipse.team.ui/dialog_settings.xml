@@ -2,4 +2,6 @@
 <section name="Workbench">
 	<section name="ImportPSFDialog">
 	</section>
+	<section name="ConfigureProjectWizard">
+	</section>
 </section>

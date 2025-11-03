@@ -1,0 +1,63 @@
+package com.leyre.romero.PSP_Proyecto_Tamagotchis;
+
+import java.util.concurrent.atomic.AtomicBoolean;
+
+public class Tamagotchis implements Runnable{
+	private String nombre;
+	private long vida = System.currentTimeMillis(); 
+	private final AtomicBoolean enEjecucion = new AtomicBoolean(true);
+	
+	enum estado{
+		OCIOSO,
+		COMIENDO,
+		LIMPIANDO,
+		SUCIO,
+		MUERTO
+	}
+	
+	public Tamagotchis(String nombre) {
+		super();
+		this.nombre = nombre;
+	}
+	
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public long getVida() {
+		return vida;
+	}
+	
+
+	public void setVida(long vida) {
+		this.vida = vida;
+	}
+
+	@Override
+	public void run() {
+		while(enEjecucion.get()) {
+			if(getVida()<5) {
+				System.out.println(nombre + " se ha muerto! Terminando el hilo.");
+                solicitarParada(); 
+                break;
+			}else {
+				
+			}
+		}
+		System.out.println("Fin de " + nombre + ". El hilo ha terminado.");
+	}
+	
+	public void solicitarParada() {
+        enEjecucion.set(false);//Me creo una bandera para cada hilo
+    }
+	
+	public void comer() {
+		System.out.println(nombre + "empieza a comer");
+		Random rnd = new Random
+	}
+	
+}

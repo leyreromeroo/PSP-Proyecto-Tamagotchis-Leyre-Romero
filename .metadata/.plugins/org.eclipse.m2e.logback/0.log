@@ -110,3 +110,17 @@
 2025-11-02 19:36:43,814 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\PSP-Proyecto-Tamagotchis\src\main\resources
 2025-11-02 19:36:43,827 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\PSP-Proyecto-Tamagotchis\src\test\resources
 2025-11-02 19:58:55,390 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-11-02 20:13:45,428 [Worker-36: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2025-11-02 20:13:45,865 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\PSP-Proyecto-Tamagotchis\src\main\resources
+2025-11-02 20:13:45,874 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\PSP-Proyecto-Tamagotchis\src\test\resources
+2025-11-03 08:34:56,220 [Worker-49: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2025-11-03 08:34:56,229 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\PSP-Proyecto-Tamagotchis\src\main\resources
+2025-11-03 08:34:56,233 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\PSP-Proyecto-Tamagotchis\src\test\resources
+2025-11-03 10:28:04,523 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-11-03 11:15:51,881 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\PSP-Proyecto-Tamagotchis\src\main\resources
+2025-11-03 11:15:51,888 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\PSP-Proyecto-Tamagotchis\src\test\resources
+2025-11-03 11:46:38,204 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-11-03 11:46:40,818 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\PSP-Proyecto-Tamagotchis\src\main\resources
+2025-11-03 11:46:40,822 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\PSP-Proyecto-Tamagotchis\src\test\resources
+2025-11-03 12:21:26,803 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\PSP-Proyecto-Tamagotchis\src\main\resources
+2025-11-03 12:21:26,809 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\leyre\Desktop\DAM 2 25-26\PSP\Tamagotchis\PSP-Proyecto-Tamagotchis\src\test\resources

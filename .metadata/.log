@@ -1357,3 +1357,6 @@ java.lang.NoSuchMethodError: 'org.eclipse.jetty.util.component.Environment org.e
 	at org.eclipse.equinox.http.jetty.internal.Activator.startServer(Activator.java:240)
 	at org.eclipse.equinox.http.jetty.JettyConfigurator.startServer(JettyConfigurator.java:52)
 	at org.eclipse.help.internal.server.JettyHelpServer$StartServerThread.run(JettyHelpServer.java:84)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-11-02 20:13:45.429
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled

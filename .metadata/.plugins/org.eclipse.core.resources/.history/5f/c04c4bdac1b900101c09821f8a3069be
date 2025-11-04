@@ -1,0 +1,227 @@
+package com.leyre.romero.PSP_Proyecto_Tamagotchis;
+
+import java.util.Random;
+import java.util.Scanner;
+import java.util.concurrent.atomic.AtomicBoolean;
+
+public class Tamagotchis implements Runnable {
+
+    enum Estado {
+        OCIOSO,
+        JUGANDO,
+        COMIENDO,
+        LIMPIANDO,
+        SUCIO,
+        MUERTO
+    }
+
+    // 5 minutos de vida
+    private static final long TIEMPO_MAXIMO_VIDA_MS = 300000L; 
+    // Se incrementa suciedad cada 20 segundos
+    private static final long INTERVALO_SUCIEDAD_MS = 20000L; 
+
+    private volatile Estado estadoActual = Estado.OCIOSO;
+    private final String nombre;
+    private volatile int suciedad = 0; // Escala 0-10
+    private final AtomicBoolean enEjecucion = new AtomicBoolean(true);
+    private final long horaNacimiento;
+    private long lastSuciedadTime; 
+
+    public Tamagotchis(String nombre) {
+        this.horaNacimiento = System.currentTimeMillis();
+        this.nombre = nombre;
+        this.lastSuciedadTime = this.horaNacimiento;
+    }
+
+    public String getNombre() { return nombre; }
+    public Estado getEstado() { return estadoActual; }
+    public int getSuciedad() { return suciedad; }
+
+    public long getTiempoRestanteMS() {
+        long tiempoTranscurrido = System.currentTimeMillis() - this.horaNacimiento;
+        return TIEMPO_MAXIMO_VIDA_MS - tiempoTranscurrido;
+    }
+
+    public void solicitarParada() {enEjecucion.set(false);}
+    
+    // Matar solo si está ocioso/sucio
+    public boolean morirPorCuidador() {
+        if (estadoActual == Estado.OCIOSO || estadoActual == Estado.SUCIO) {
+            this.estadoActual = Estado.MUERTO;
+            System.out.println(nombre + " ha sido TERMINADO por el cuidador.");
+            solicitarParada();
+            return true;
+        } else {
+            System.out.println(nombre + " está ocupado (" + estadoActual + "), no se puede matar ahora.");
+            return false;
+        }
+    }
+
+
+    @Override
+    public void run() {
+        System.out.println(nombre + " ha nacido y su hilo comienza.");
+
+        while (enEjecucion.get()) {
+            
+            long currentTime = System.currentTimeMillis();
+            long tiempoTranscurridoVida = currentTime - horaNacimiento;
+            long tiempoTranscurridoSuciedad = currentTime - lastSuciedadTime;
+
+            // 1. --- LÓGICA DE MUERTE POR TIEMPO ---
+            if (tiempoTranscurridoVida >= TIEMPO_MAXIMO_VIDA_MS) {
+                this.estadoActual = Estado.MUERTO;
+                System.out.println(nombre + " se ha muerto de viejo! (5 minutos de vida agotados).");
+                solicitarParada();
+                break;
+            }
+            
+            // 2. --- LÓGICA DE MUERTE POR SUCIEDAD ---
+            if (this.suciedad >= 10) {
+                this.estadoActual = Estado.MUERTO;
+                System.out.println(nombre + " ha muerto por suciedad extrema! Nivel: " + suciedad);
+                solicitarParada();
+                break;
+            }
+
+            // 3. --- LÓGICA DE INCREMENTO DE SUCIEDAD (Cada 20 segundos) ---
+            if (tiempoTranscurridoSuciedad >= INTERVALO_SUCIEDAD_MS) {
+                this.suciedad++;
+                this.lastSuciedadTime = currentTime; 
+                
+                System.out.println(nombre + " se ha ensuciado. Nivel: " + suciedad);
+                
+                if (this.suciedad == 5) {
+                    System.out.println(nombre + " avisa: Estoy empezando a estar muy sucio!");
+                    this.estadoActual = Estado.SUCIO;
+                } else if (this.suciedad > 5 && this.estadoActual != Estado.SUCIO) {
+                    this.estadoActual = Estado.SUCIO;
+                }
+            }
+            
+            // 4. --- PAUSA Y MANEJO DE INTERRUPCIONES ---
+            try {
+                // Pausa más larga si está ocioso, más corta si está ocupado revisando estado.
+                if (estadoActual == Estado.OCIOSO || estadoActual == Estado.SUCIO) {
+                     Thread.sleep(2000); 
+                } else {
+                     Thread.sleep(500); 
+                }
+            } catch (InterruptedException e) {
+                System.out.println(nombre + " fue interrumpido.");
+                Thread.currentThread().interrupt(); 
+                solicitarParada();
+                break;
+            }
+        }
+        System.out.println("Fin de la ejecución del hilo " + nombre);
+    }
+    
+    //-------------------------------------------------------------
+    // MÉTODOS DE ACCIÓN
+    //-------------------------------------------------------------
+
+    public void comer() {
+        // Solo puede comer si está OCIOSO o SUCIO
+        if (estadoActual != Estado.OCIOSO && estadoActual != Estado.SUCIO) {
+            System.out.println(nombre + " está ocupado (" + estadoActual + "), no puede comer ahora.");
+            return;
+        }
+        
+        estadoActual = Estado.COMIENDO;
+        Random rnd = new Random();
+        // Tiempo aleatorio entre 500ms y 2000ms
+        int tiempoComida = rnd.nextInt(1501) + 500; 
+        
+        System.out.println(nombre + " empieza a comer. Tardará: " + tiempoComida + "ms. [ESTADO: " + estadoActual + "]");
+
+        try {
+            Thread.sleep(tiempoComida);
+        } catch (InterruptedException e) {
+            System.out.println(nombre + " fue interrumpido mientras comía.");
+            Thread.currentThread().interrupt();
+        }
+
+        System.out.println(nombre + " ha terminado de comer.");
+        // Vuelve al estado SUCIO si el nivel de suciedad lo requiere, sino a OCIOSO.
+        this.estadoActual = (this.suciedad >= 5) ? Estado.SUCIO : Estado.OCIOSO;
+    }
+
+    public void jugar() {
+        if (estadoActual != Estado.OCIOSO && estadoActual != Estado.SUCIO) {
+            System.out.println(nombre + " está ocupado (" + estadoActual + "), no puede jugar ahora.");
+            return;
+        }
+        
+        estadoActual = Estado.JUGANDO;
+        Scanner sc = new Scanner(System.in);
+        Random rnd = new Random();
+
+        System.out.println( nombre + " dice: ¡Vamos a jugar! [ESTADO: " + estadoActual + "]");
+        
+        int respuesta = -1;
+        int suma = 0;
+
+        try {
+            while (respuesta != suma) {
+                
+                int num1, num2;
+                
+                // Generar suma menor que 10
+                do {
+                    num1 = rnd.nextInt(10); 
+                    num2 = rnd.nextInt(10);
+                    suma = num1 + num2;
+                } while (suma >= 10); 
+
+                System.out.print("\n [" + nombre + "] ¿Cuánto es " + num1 + " + " + num2 + "? Respuesta: ");
+
+                if (sc.hasNextInt()) {
+                    respuesta = sc.nextInt();
+                    // Consumir el salto de línea pendiente
+                    sc.nextLine(); 
+
+                    if (respuesta == suma) {
+                        System.out.println(nombre + " dice: ¡Correcto! Ganaste. 🎉");
+                        break;
+                    } else {
+                        System.out.println(nombre + " dice: ¡Incorrecto! Vuelve a intentarlo.");
+                    }
+                } else {
+                    System.out.println("Entrada inválida. Por favor, introduce un número.");
+                    sc.next();
+                }
+            }
+        } catch (Exception e) {
+            System.err.println(nombre + " ERROR durante el juego: " + e.getMessage());
+        } finally {
+            // Vuelve al estado SUCIO si el nivel de suciedad lo requiere, sino a OCIOSO.
+            estadoActual = (this.suciedad >= 5) ? Estado.SUCIO : Estado.OCIOSO;
+            System.out.println("El juego de " + nombre + " ha terminado. [ESTADO: " + estadoActual + "]");
+        }
+    }
+    
+    public void limpiar() {
+        if (estadoActual != Estado.OCIOSO && estadoActual != Estado.SUCIO) {
+            System.out.println(nombre + " está ocupado (" + estadoActual + "), no puede limpiarse ahora.");
+            return;
+        }
+        
+        estadoActual = Estado.LIMPIANDO;
+        final long TIEMPO_BAÑO_MS = 5000; 
+
+        System.out.println(nombre + " comienza a limpiarse. Durará 5 segundos. [ESTADO: " + estadoActual + "]");
+        
+        try {
+            Thread.sleep(TIEMPO_BAÑO_MS);
+        } catch (InterruptedException e) {
+            System.out.println(nombre + " fue interrumpido durante el baño.");
+            Thread.currentThread().interrupt();
+        }
+
+        this.suciedad = 0;
+        this.lastSuciedadTime = System.currentTimeMillis(); // Reinicia el contador de suciedad
+        this.estadoActual = Estado.OCIOSO;
+        System.out.println(nombre + " está limpio (Suciedad: " + suciedad + "). [ESTADO: " + estadoActual + "]");
+    }
+}

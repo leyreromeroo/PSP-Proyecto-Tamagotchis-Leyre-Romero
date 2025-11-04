@@ -137,10 +137,10 @@ public class Tamagotchis implements Runnable {
 		//Supongo que una manzana se tarda 20s
 		long tiempoComida = (20000/velocidad_comer_ms); 
 
-		System.out.println(nombre + " empieza a comer. Tardará: " + tiempoComida + " s. [ESTADO: " + estadoActual + "]");
+		System.out.println(nombre + " empieza a comer. Tardará: " + tiempoComida + "ms. [ESTADO: " + estadoActual + "]");
 
 		try {
-			Thread.sleep(tiempoComida*1000);
+			Thread.sleep(tiempoComida);
 		} catch (InterruptedException e) {
 			System.out.println(nombre + " fue interrumpido mientras comía.");
 			Thread.currentThread().interrupt();

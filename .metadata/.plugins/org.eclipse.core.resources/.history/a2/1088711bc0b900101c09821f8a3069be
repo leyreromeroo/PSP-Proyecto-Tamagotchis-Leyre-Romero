@@ -1,0 +1,129 @@
+package com.leyre.romero.PSP_Proyecto_Tamagotchis;
+
+import java.util.Scanner;
+
+public class App {
+    
+    // Método para mostrar el estado actual de todos los Tamagotchis
+    private static void mostrarEstado(Tamagotchis[] tamagotchis, Thread[] hilos) {
+        System.out.println("\n--- ESTADO DE LOS TAMAGOTCHIS ---");
+        System.out.println("| ID | Nombre | Hilo Vivo | Estado Actual | Suciedad (0-10) | Vida Restante |");
+        System.out.println("---------------------------------------------------------------------------------");
+        
+        for (int i = 0; i < tamagotchis.length; i++) {
+            Tamagotchis t = tamagotchis[i];
+            
+            // Si el hilo ya no está vivo, no tiene sentido mostrar el resto de datos
+            if (!hilos[i].isAlive() && t.getEstado() != Tamagotchis.Estado.MUERTO) {
+                System.out.printf("| %-2d | %-10s | %-9s | %-13s | %-15s | %-13s |\n", 
+                    (i + 1), t.getNombre(), "NO", Tamagotchis.Estado.MUERTO, "-", "-");
+                continue;
+            }
+            
+            long vidaMs = t.getTiempoRestanteMS();
+            String vidaStr = (vidaMs > 0) ? String.format("%.1f s", vidaMs / 1000.0) : "0.0 s";
+            
+            System.out.printf("| %-2d | %-10s | %-9s | %-13s | %-15d | %-13s |\n",
+                (i + 1), 
+                t.getNombre(), 
+                hilos[i].isAlive() ? "SÍ" : "NO", 
+                t.getEstado(), 
+                t.getSuciedad(), 
+                vidaStr);
+        }
+        System.out.println("---------------------------------------------------------------------------------");
+    }
+
+    public static void main(String[] args) {
+        final int NUM_TAMAGOTCHIS = 5;
+        Tamagotchis[] tamagotchis = new Tamagotchis[NUM_TAMAGOTCHIS];
+        Thread[] hilos = new Thread[NUM_TAMAGOTCHIS];
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("--- CUIDADOR: INICIANDO TAMAGOTCHIS ---");
+        
+        // 1. Iniciar los 5 Tamagotchis
+        for (int i = 0; i < NUM_TAMAGOTCHIS; i++) {
+            tamagotchis[i] = new Tamagotchis("Tama-" + (i + 1));
+            hilos[i] = new Thread(tamagotchis[i]);
+            hilos[i].start();
+        }
+        
+        // 2. Bucle principal del menú
+        int opcion = -1;
+        while (opcion != 0) {
+            
+            mostrarEstado(tamagotchis, hilos);
+            
+            System.out.println("\n--- MENÚ DEL CUIDADOR ---");
+            System.out.println("1. Alimentar Tamagotchi");
+            System.out.println("2. Jugar con Tamagotchi");
+            System.out.println("3. Limpiar Tamagotchi");
+            System.out.println("4. Matar Tamagotchi (si está ocioso)");
+            System.out.println("0. Salir y Terminar la Simulación");
+            System.out.print("Seleccione una opción: ");
+            
+            if (sc.hasNextInt()) {
+                opcion = sc.nextInt();
+                
+                if (opcion >= 1 && opcion <= 4) {
+                    System.out.print("Ingrese el ID del Tamagotchi (1 a " + NUM_TAMAGOTCHIS + "): ");
+                    int id = sc.nextInt();
+                    
+                    if (id >= 1 && id <= NUM_TAMAGOTCHIS) {
+                        Tamagotchis tamagotchiSeleccionado = tamagotchis[id - 1];
+                        Thread hiloSeleccionado = hilos[id - 1];
+
+                        if (!hiloSeleccionado.isAlive()) {
+                             System.out.println("El Tamagotchi " + id + " ya está muerto y su hilo finalizó.");
+                        } else {
+                            switch (opcion) {
+                                case 1:
+                                    // La acción de comer se ejecuta en el hilo principal 
+                                    // (mientras el Tamagotchi está en el bucle run)
+                                    tamagotchiSeleccionado.comer(); 
+                                    break;
+                                case 2:
+                                    tamagotchiSeleccionado.jugar(); 
+                                    break;
+                                case 3:
+                                    tamagotchiSeleccionado.limpiar();
+                                    break;
+                                case 4:
+                                    tamagotchiSeleccionado.morirPorCuidador();
+                                    break;
+                            }
+                        }
+                    } else {
+                        System.out.println("ID de Tamagotchi inválido.");
+                    }
+                } else if (opcion != 0) {
+                    System.out.println("Opción de menú inválida.");
+                }
+            } else {
+                System.out.println("Entrada inválida. Por favor, introduzca un número.");
+                sc.next(); // Consumir la entrada inválida
+            }
+        }
+
+        // 3. Finalizar la simulación
+        System.out.println("\n--- TERMINANDO LA SIMULACIÓN ---");
+        for (int i = 0; i < NUM_TAMAGOTCHIS; i++) {
+            if (hilos[i].isAlive()) {
+                tamagotchis[i].solicitarParada();
+                hilos[i].interrupt(); // Interrumpir si está en sleep/wait
+            }
+        }
+        
+        try {
+            for (Thread h : hilos) {
+                h.join(1000); // Esperar un segundo a que cada hilo termine
+            }
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+        
+        System.out.println("Todos los hilos han finalizado. Adiós.");
+        sc.close();
+    }
+}
